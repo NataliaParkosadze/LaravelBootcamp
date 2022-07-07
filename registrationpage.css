@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=Open+Sans&display=swap');
+body {
+    margin: 0px;
+}
+
+.registrationpage__container {
+    display: flex;
+}
+
+.registrationpage__header {
+    padding: 30px 60px;
+    display: flex;
+    color: #FFFFFF;
+    background-color: #7025FB;
+}
+
+.registrationpage-left__wrapper {
+    width: 923px;
+    height: 100vh;
+}
+
+.registrationpage-left__wrapper-img {
+    height: calc(100% - 84px);
+    position: relative;
+}
+
+.registrationpage-left__wrapper-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.left__wrapper-quote {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 130px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 26;
+    font-weight: 800;
+    color: #212529;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.left__wrapper-quote p {
+    color: #E5E6E8;
+    font-size: 24px;
+    font-weight: 500;
+}
