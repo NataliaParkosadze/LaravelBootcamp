@@ -27,12 +27,12 @@
         <div class="registration-form__container">
             <div class="registration-steps">
                 <div class="registration-steps-numbers">
-                    <div class="registration-steps-number">
+                    <div class="registration-steps-number step-one">
                         1
                     </div>
                     <div class="registration-steps-line"></div>
                     <div class="registration-steps-number">
-                        1
+                        2
                     </div>
                 </div>
                 <div class="registration-steps-titles">
@@ -48,12 +48,43 @@
                     <p class="registration-form-subtitle">This is basic informaton fields</p>
                 </div>
 
-                <form action="" class="registration-form">
-                    <input type="text" placeholder="Name" class="registration-form-input">
+                <form action=""  id="registration-form" class="registration-form">
+                    <div id="form-error__container">
+                        <div id="form-error_header"><div class="error-top"><img src='./images/error-icon.svg'><div id='form-error_header-text'></div> </div><img onclick="closeError()" id="error-close" src="./images/error-close.svg"/></div>
+                            <div id="form-error"></div>
+
+                    </div>
+                    <div class="form-input-container">
+                        <input type="text" id="form-name" placeholder="Name *" class="registration-form-input input-1">
+                        <img src="./images/check-arrow.svg" class="form-success-icon" id="form-name-icon"></img>
+                    </div>
+
+                    <div class="form-input-container">
+                        <input  type="text" id="form-email" placeholder="Email address *" class="registration-form-input input-1">
+                        <img src="./images/check-arrow.svg" class="form-success-icon" id="form-email-icon"></img>
+                    </div>
+
+                    <div class="form-input-container">
+                        <input  type="number" id="form-number" placeholder="Phone number *" class="registration-form-input input-1">
+                        <img src="./images/check-arrow.svg" class="form-success-icon" id="form-number-icon"></img>
+                    </div>
+
+                    <div class="form-input-container">
+                        <input  type="date" id="form-birth" placeholder="Date of birth *" class="registration-form-input input-1"> 
+                        <img src="./images/check-arrow.svg" class="form-success-icon" id="form-birth-icon"></img>
+                    </div>
+
+
+                    <div class="registration-form-buttons">
+                        <a href="./mainpage.html" class="registration-back-btn">Back</a>
+                        <button type="submit" value="Submit" class="registration-submit-btn">Next<img src='./images/get-started-arrow.svg'/></button> 
+                        <!-- <div onclick="secondSteps()" id="next-btn" class="next-btn">Next<img src='./images/get-started-arrow.svg'/></div> -->
+                    </div> 
                 </form>
             </div>
         </div>
         </div>
     </div>
 </body>
+<script src="./registrationform.js"></script>
 </html>
